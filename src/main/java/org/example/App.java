@@ -11,9 +11,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        MallarDuck mallarDuck = new MallarDuck();
-        RedHeadDuck redHeadDuck = new RedHeadDuck();
-        RubberDuck rubberDuck = new RubberDuck();
+        Duck mallarDuck = new MallarDuck();
+        Duck redHeadDuck = new RedHeadDuck();
+        Duck rubberDuck = new RubberDuck();
         Duck decoyDuck = new DecoyDuck();
 
         List<Duck> ducks = List.of(mallarDuck, redHeadDuck, rubberDuck, decoyDuck);
@@ -21,16 +21,10 @@ public class App
         ducks.forEach(duck -> {
             duck.display();
             duck.swim();
+            duck.fly();
+            duck.quack();
         });
 
-
-        List<Flyable> flyableDucks = List.of(redHeadDuck, mallarDuck);
-
-        flyableDucks.forEach(Flyable::fly);
-
-        List<Quakable> quakablesDucks = List.of(mallarDuck, redHeadDuck, rubberDuck);
-
-        quakablesDucks.forEach(Quakable::quack);
 
     }
 }

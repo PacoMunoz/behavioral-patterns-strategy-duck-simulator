@@ -1,18 +1,12 @@
 package org.example;
 
 public class MallarDuck extends Duck implements Flyable, Quakable {
+    public MallarDuck() {
+        super(new Quack(), new FlyWithWinds());
+    }
+
     @Override
     public void display() {
         System.out.println("I'm a mallar duck");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Fly fly fly");
-    }
-
-    @Override
-    public void quack() {
-        System.out.println("Quack quack quack");
     }
 }
