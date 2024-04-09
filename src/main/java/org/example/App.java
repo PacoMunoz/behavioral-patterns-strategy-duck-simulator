@@ -20,6 +20,5 @@ public class App
         List<Duck> ducks = List.of(mallarDuck, redHeadDuck, rubberDuck, decoyDuck);
 
         DuckSimulator.processDuck(ducks);
-
     }
 }
