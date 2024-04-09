@@ -1,4 +1,7 @@
-package org.example;
+package org.example.model;
+
+import org.example.model.behavior.Flyable;
+import org.example.model.behavior.Quakable;
 
 public class Duck {
     private final Quakable quakable;

@@ -1,4 +1,7 @@
-package org.example;
+package org.example.model;
+
+import org.example.model.behavior.CantFly;
+import org.example.model.behavior.Silence;
 
 public class DecoyDuck extends Duck {
     public DecoyDuck() {

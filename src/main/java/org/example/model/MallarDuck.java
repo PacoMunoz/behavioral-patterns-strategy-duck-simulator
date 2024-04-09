@@ -1,4 +1,9 @@
-package org.example;
+package org.example.model;
+
+import org.example.model.behavior.FlyWithWinds;
+import org.example.model.behavior.Flyable;
+import org.example.model.behavior.Quack;
+import org.example.model.behavior.Quakable;
 
 public class MallarDuck extends Duck implements Flyable, Quakable {
     public MallarDuck() {

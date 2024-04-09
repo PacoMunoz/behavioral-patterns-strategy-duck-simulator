@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model.behavior;
 
 public class Quack implements Quakable{
     @Override

@@ -1,6 +1,8 @@
 package org.example;
 
-import java.util.ArrayList;
+import org.example.model.*;
+import org.example.service.DuckSimulator;
+
 import java.util.List;
 
 /**
@@ -9,8 +11,7 @@ import java.util.List;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
         Duck mallarDuck = new MallarDuck();
         Duck redHeadDuck = new RedHeadDuck();
         Duck rubberDuck = new RubberDuck();
@@ -18,13 +19,6 @@ public class App
 
         List<Duck> ducks = List.of(mallarDuck, redHeadDuck, rubberDuck, decoyDuck);
 
-        ducks.forEach(duck -> {
-            duck.display();
-            duck.swim();
-            duck.fly();
-            duck.quack();
-        });
-
-
+        DuckSimulator.processDuck(ducks);
     }
 }
