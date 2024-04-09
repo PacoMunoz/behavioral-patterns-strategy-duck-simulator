@@ -1,7 +1,7 @@
-package org.example;
+package org.ducksimulator;
 
-import org.example.model.*;
-import org.example.service.DuckSimulator;
+import org.ducksimulator.model.*;
+import org.ducksimulator.service.DuckSimulator;
 
 import java.util.List;
 
@@ -16,8 +16,9 @@ public class App
         Duck redHeadDuck = new RedHeadDuck();
         Duck rubberDuck = new RubberDuck();
         Duck decoyDuck = new DecoyDuck();
+        Duck mandarinDuck = new MandarinDuck();
 
-        List<Duck> ducks = List.of(mallarDuck, redHeadDuck, rubberDuck, decoyDuck);
+        List<Duck> ducks = List.of(mallarDuck, redHeadDuck, rubberDuck, decoyDuck, mandarinDuck);
 
         DuckSimulator.processDuck(ducks);
     }

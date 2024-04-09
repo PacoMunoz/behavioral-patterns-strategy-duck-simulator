@@ -1,4 +1,4 @@
-package org.example.model.behavior;
+package org.ducksimulator.model.behavior.quack;
 
 public class Quack implements Quakable{
     @Override

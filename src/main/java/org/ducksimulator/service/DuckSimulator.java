@@ -1,6 +1,6 @@
-package org.example.service;
+package org.ducksimulator.service;
 
-import org.example.model.Duck;
+import org.ducksimulator.model.Duck;
 
 import java.util.List;
 
@@ -13,6 +13,7 @@ public class DuckSimulator {
             duck.fly();
             duck.swim();
             duck.quack();
+            duck.eat();
         });
     }
 }

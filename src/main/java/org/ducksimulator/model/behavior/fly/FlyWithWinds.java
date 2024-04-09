@@ -1,4 +1,4 @@
-package org.example.model.behavior;
+package org.ducksimulator.model.behavior.fly;
 
 public class FlyWithWinds implements Flyable {
     @Override
